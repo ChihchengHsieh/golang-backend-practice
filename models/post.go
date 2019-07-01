@@ -117,6 +117,7 @@ func FindPosts(filterDetail bson.M) (interface{}, error) {
 
 }
 
+//MGDB_APIKEY=mongodb+srv://mike820808:0933a887632@cluster0-a0dck.mongodb.net/test?retryWrites=true&w=majority
 func FindPostsByUserID(id string) (interface{}, error) {
 
 	oid, err := primitive.ObjectIDFromHex(id)

@@ -4,7 +4,7 @@ import (
 	"apis"
 	"databases"
 
-	_ "github.com/joho/godotenv"
+	_ "github.com/joho/godotenv/autoload"
 )
 
 // var exisitingNum int = 45 // can this one be used in another file?
@@ -12,7 +12,6 @@ import (
 func main() {
 
 	// Setting the environment variables here
-
 	databases.InitDB() // the client can be extracted to here // init the database to create the client
 	// fmt.Println(databases.DB)
 	// fmt.Println("Another Number is: ", databases.AnotherNumner)
@@ -67,18 +66,6 @@ func main() {
 	// 		"user": user,
 	// 	})
 	// })
-
-	/*
-		[
-		    {
-		        "_id": "5d182ec8b9e45ea4c5a48c1b",
-		        "FirstName": "Chihcheng",
-		        "LastName": "Hsieh",
-		        "Email": "mike820808@gmail.com",
-		        "Password": ""
-		    }
-		]
-	*/
 
 	router.Run()
 

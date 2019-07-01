@@ -3,3 +3,4 @@
 /go.mongodb.org
 /golang.org
 /testingPackage
+.env
