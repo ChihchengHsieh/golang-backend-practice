@@ -13,9 +13,6 @@ func main() {
 
 	// Setting the environment variables here
 	databases.InitDB() // the client can be extracted to here // init the database to create the client
-	// fmt.Println(databases.DB)
-	// fmt.Println("Another Number is: ", databases.AnotherNumner)
-	// fmt.Printf("hello, world\n")
 
 	// newUser := models.User{"Chihcheng", "Hsieh", "mike820808@gmail.com"}
 
